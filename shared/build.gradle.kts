@@ -13,7 +13,8 @@ kotlin {
             jvmTarget.set(JvmTarget.JVM_11)
         }
     }
-    
+
+
     listOf(
         iosX64(),
         iosArm64(),
@@ -24,18 +25,32 @@ kotlin {
             isStatic = true
         }
     }
-    
+
+    applyDefaultHierarchyTemplate()
+
     sourceSets {
-        commonMain.dependencies {
-            implementation(libs.kotlinx.coroutines.core)
+        val commonMain by getting {
+            dependencies {
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.1")
+            }
         }
 
-        androidMain.dependencies {
-            implementation(libs.androidx.lifecycle.viewmodel.ktx)
+        val androidMain by getting {
+            dependencies {
+                implementation(libs.androidx.lifecycle.viewmodel.ktx)
+            }
         }
 
-        iosMain.dependencies {
+        val iosMain by getting {
+            dependencies {
 
+            }
+        }
+
+        val commonTest by getting {
+            dependencies {
+                implementation(libs.kotlin.test)
+            }
         }
     }
 }

@@ -39,7 +39,7 @@ kotlin {
 
 android {
     namespace = "org.iagxferreira.kmmpoc"
-    compileSdk = libs.versions.android.compileSdk.get().toInt()
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "org.iagxferreira.kmmpoc"
