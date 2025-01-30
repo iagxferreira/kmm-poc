@@ -115,7 +115,7 @@ fun Loader() {
     ) {
         CircularProgressIndicator(
             modifier = Modifier.width(64.dp),
-            color = MaterialTheme.colors.surface,
+            color = MaterialTheme.colors.primary,
         )
     }
 }
