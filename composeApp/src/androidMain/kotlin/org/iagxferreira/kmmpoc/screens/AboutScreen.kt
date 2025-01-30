@@ -1,4 +1,4 @@
-package org.iagxferreira.kmmpoc
+package org.iagxferreira.kmmpoc.screens
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -16,6 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import org.iagxferreira.kmmpoc.Platform
 
 @Composable
 fun AboutScreen() {
